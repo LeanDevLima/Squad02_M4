@@ -214,11 +214,13 @@ Como foi a experiência? | Houve alguma dificuldade? | Como os integrantes do SQ
 
 - Para essa atividade vou considerar esse mesmo [repositório](https://github.com/LeanDevLima/Squad02_M4).
 
+Fiz uso da extensão [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) para demonstrar a execução dessa atividade.
 
+<img src="Atividades\atividade4.png">
 
+<br>
 
-
-
+No que diz respeito à experiência resultante desta atividade, observamos que alguns membros da turma demonstraram um maior domínio do conceito de Git, enquanto outros estavam menos familiarizados. Trabalhamos em conjunto, auxiliando-nos mutuamente, para garantir que todos pudessem concluir com sucesso a atividade.
 
 
 </details>
