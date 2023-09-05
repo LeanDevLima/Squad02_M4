@@ -1,0 +1,17 @@
+'''
+Crie um script com as seguintes instruções, pesquisando na internet como fazer:
+
+
+☐ Crie uma tupla com 5 dados
+✔ Altere a tupla para uma lista @done(23-09-05 18:06)
+✔ Insira 2 dados extras a essa lista @done(23-09-05 18:06)
+☐ Remova o primeiro dado da lista
+☐ Remova o último dado da lista
+☐ Faça um print com o primeiro dado da lista
+☐ Faça um print com a quantidade de dados da lista 
+☐ Crie um dicionário com os seguintes dados:
+☐ Nome, Idade, Profissão
+☐ 
+☐ Imprima somente o valor contido na chave Nome do dicionário
+
+'''
