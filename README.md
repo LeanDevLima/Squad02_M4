@@ -5,7 +5,7 @@ Esse [repositório](https://github.com/LeanDevLima/Squad02_M4) é dedicado às a
 Clique nas "►" abaixo para visualizar os conteúdos trabalhados nesse módulo. Para recolher o conteúdo, basta clicar nas "▼" novamente. 😁
 
 <details>
-<summary>🫨 Algorit o que? 🌟</summary>
+<summary>A1M4 - Conceitos fundamentais 🌟</summary>
 
 <details>
 <summary>🚀 Descrição da 1ª Atividade: 🌟</summary>
@@ -166,7 +166,7 @@ No Chat GPT inseri as seguintes informações:
     Desde já agradeço pelas definições para melhor compreensão destes conceitos relacionados ao Git.
 
 ---
-Pedi por favor e agradeci no final porque se um dia essa ferramenta virar algo parecido com a [SkyNet](https://pt.wikipedia.org/wiki/Skynet) vão perceber que eu era um ser humano legal e pode ser que minha vida seja poupada. 🫠 
+Pedi 'por favor' e agradeci no final porque se um dia essa ferramenta virar algo parecido com a [SkyNet](https://pt.wikipedia.org/wiki/Skynet) vão perceber que eu era um ser humano legal e pode ser que minha vida seja poupada. 🫠 
 
 [![](Atividades\Skynet.png)](https://medium.com/data-driven-fiction/the-skynet-moment-looms-with-chatgpt-5ec9714f2750)
 
@@ -222,6 +222,20 @@ Fiz uso da extensão [Git Graph](https://marketplace.visualstudio.com/items?item
 
 No que diz respeito à experiência resultante desta atividade, observamos que alguns membros da turma demonstraram um maior domínio do conceito de Git, enquanto outros estavam menos familiarizados. Trabalhamos em conjunto, auxiliando-nos mutuamente, para garantir que todos pudessem concluir com sucesso a atividade.
 
+
+</details>
+
+<details>
+<summary>🚀 Descrição da 5ª Atividade: 🌟</summary>
+<br>
+
+🔍EM SQUADS Realizem os passos detalhados a seguir: Clone o repositório que você criou. Agora você vai criar uma branch e subir arquivos diferentes em cada uma dela. Mescle as branchs.
+
+
+
+
+
+</details>
 
 </details>
 
