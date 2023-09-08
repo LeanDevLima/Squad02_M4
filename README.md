@@ -231,6 +231,9 @@ No que diz respeito à experiência resultante desta atividade, observamos que a
 
 🔍EM SQUADS Realizem os passos detalhados a seguir: Clone o repositório que você criou. Agora você vai criar uma branch e subir arquivos diferentes em cada uma dela. Mescle as branchs.
 
+- Para essa atividade vou considerar esse mesmo [repositório](https://github.com/LeanDevLima/Squad02_M4).
+
+Fiz uso da extensão [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) para demonstrar a execução dessa atividade.
 
 
 
