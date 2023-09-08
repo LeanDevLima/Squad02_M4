@@ -262,9 +262,9 @@ Eu optei pela segunda opção, dei um git branch -D branch2 só por garantia (va
 
 E por fim, subi as informações para o Github.
 
+<img src="Atividades\push_toMain.png">
 
-
-
+Resultado final no Graph:
 
 
 
