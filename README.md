@@ -235,6 +235,21 @@ No que diz respeito à experiência resultante desta atividade, observamos que a
 
 Fiz uso da extensão [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) para demonstrar a execução dessa atividade.
 
+Primeiramente criei duas branchs, branch1 e branch2.
+
+<img src="Atividades\branchs.png">
+
+Em seguida criei um arquivo em cada branch, commitBranch1.py na branch1 e commitBranch2.py na branch2 (ambos estão na pasta 'Atividades' desse repositório).
+
+<img src="Atividades\arquivosBranchs.png">
+
+Por fim fiz um merge dessas branches, transformando as duas na branch1.
+
+<img src="Atividades\mergeBranchs.png">
+
+Como não pretendo usar essas branchs nesse repositório fiz a exclusão das mesmas para trabalhar apenas com a branch original (main).
+
+
 
 
 
