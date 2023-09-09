@@ -957,6 +957,235 @@ As estruturas de repetição e iteração são elementos fundamentais na program
 
 </details>
 
+</details>
+
+<details>
+<summary>Estruturas de repetição e iteração 🌟</summary>
+<br>
+
+<details>
+<summary>🚀 Descrição da 22ª Atividade: 🌟</summary>
+<br>
+
+🔍PARTE 1 INDIVIDUAL Faça um for e imprima na tela todos os numeros de 1 até 1000. Depois, crie uma estrutura condicional para descobrir e printar apenas os números que forem par.  
+
+```python
+
+print("Todos os números de 1 até 1000:")
+for numero in range(1, 1001):
+    print(numero)
+
+
+print("\nNúmeros pares de 1 até 1000:")
+for numero in range(1, 1001):
+    if numero % 2 == 0:
+        print(numero)
+
+```
+O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: Atividades\Atividade22.py.
+
+</details>
+
+<details>
+<summary>🚀 Descrição da 23ª Atividade: 🌟</summary>
+<br>
+
+🔍PARTE 2 EM SQUAD Crie a estrutura de uma tabuada para um valor inserido. O resultado deverá ser printado do valor multiplicado de 1 a 10. 
+
+```python
+
+numero = int(input("Digite um número para a tabuada: "))
+
+print(f"Tabuada do {numero}:")
+for i in range(1, 11):
+    resultado = numero * i
+    print(f"{numero} x {i} = {resultado}")
+
+```
+O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: Atividades\Atividade23.py.
+
+</details>
+
+<details>
+<summary>🚀 Descrição da 24ª Atividade: 🌟</summary>
+<br>
+
+🔍PARTE 3 Agora crie um script para com uma lista de frutas, e outra lista com o nome alergias. Insira uma fruta da lista de frutas na lista de alergias. Depois crie um for para cada item da lista passar por uma verificação em uma estrutura condicional para verificar se está essa fruta está contida na lista de alergias. Caso a fruta esteja na lista, imprima na tela o nome dela. 
+
+```python
+
+frutas_seguras = ["maçã", "banana", "laranja", "uva", "pêssego"]
+
+
+frutas_alergicas = ["abacaxi", "morango", "kiwi", "melancia", "manga"]
+
+
+fruta_alergia = input("Digite uma fruta que você seja alérgico(a): ")
+frutas_alergicas.append(fruta_alergia)
+
+
+fruta_usuario = input("Digite o nome de uma fruta: ")
+
+
+if fruta_usuario in frutas_alergicas:
+    print(f"Você é alérgico(a) a {fruta_usuario}. Não a consuma!")
+elif fruta_usuario in frutas_seguras:
+    print(f"Você pode consumir {fruta_usuario}.")
+else:
+    print(f"A fruta {fruta_usuario} não está na lista de alergias nem na lista de frutas seguras.")
+
+```
+
+O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: Atividades\Atividade24.py.
+
+</details>
+
+<details>
+<summary>🚀 Descrição da 25ª Atividade: 🌟</summary>
+<br>
+
+🔍Use um loop "while" em Python para imprimir a mensagem enquanto o valor de x não for igual a 5. Aproveite para tirar todas as suas dúvidas.
+
+
+```python
+
+x = 0 
+
+while x != 5:
+    print("O valor de x ainda não é igual a 5.")
+    x += 1  
+    
+print("Agora o valor de x é igual a 5.")
+
+```
+
+O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: Atividades\Atividade25.py.
+
+</details>
+
+
+
+<details>
+<summary>🚀 Descrição da 26ª Atividade: 🌟</summary>
+<br>
+
+🔍EM SQUADS Leiam o texto abaixo e resolvam. O instituto Joga Junto vai checar todos os emails existentes utilizados pelos usuários. Para isso sua equipe precisará criar  um código para verificar se o email inserido pelo usuário tem o @jogajuntoinstituto.org no texto. Crie um input para verificar esse texto. Crie casos de teste escritos em BDD, um com sucesso, e outro com falha. Execute os testes, documente e suba os resultados no Bitrix da sua equipe. 
+
+
+```python
+
+email = input("Digite o seu email: ")
+
+if "@jogajuntoinstituto.org" in email:
+    print("Email válido do Instituto Joga Junto.")
+else:
+    print("Email não pertence ao Instituto Joga Junto.")
+
+```
+
+O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: Atividades\Atividade26.py.
+
+- Aqui estão algumas sugestões de casos de teste aplicáveis neste cenário:
+---
+
+### Caso de Teste 1 (Sucesso):
+
+**Dado** que o usuário insira o email "joao@jogajuntoinstituto.org"
+
+**Quando** o código for executado
+
+**Então** o código deve imprimir "Email válido do Instituto Joga Junto."
+
+---
+
+### Caso de Teste 2 (Sucesso):
+
+**Dado** que o usuário insira o email "alice@jogajuntoinstituto.org"
+
+**Quando** o código for executado
+
+**Então** o código deve imprimir "Email válido do Instituto Joga Junto."
+
+---
+### Caso de Teste 3 (Falha):
+
+**Dado** que o usuário insira o email "maria@gmail.com"
+
+**Quando** o código for executado
+
+**Então** o código deve imprimir "Email não pertence ao Instituto Joga Junto."
+
+---
+### Caso de Teste 4 (Sucesso):
+
+**Dado** que o usuário insira o email "contato@jogajuntoinstituto.org"
+
+**Quando** o código for executado
+
+**Então** o código deve imprimir "Email válido do Instituto Joga Junto."
+
+---
+### Caso de Teste 5 (Falha):
+
+**Dado** que o usuário insira o email "pedro@outrodominio.com"
+
+**Quando** o código for executado
+
+**Então** o código deve imprimir "Email não pertence ao Instituto Joga Junto."
+
+---
+### Caso de Teste 6 (Sucesso):
+
+**Dado** que o usuário insira o email "info@jogajuntoinstituto.org"
+
+**Quando** o código for executado
+
+**Então** o código deve imprimir "Email válido do Instituto Joga Junto."
+
+---
+
+</details>
+
+<details>
+<summary>🚀 Descrição da 27ª Atividade: 🌟</summary>
+<br>
+
+🔍EM SQUADS Leiam o texto abaixo e resolvam. Desenvolvam um programa que conte quantas vogais (a, e, i, o, u) existem em uma palavra fornecida pelo usuário. Implementem uma função que receba uma palavra qualquer (string) como entrada.
+O programa deve imprimir o número total de vogais na palavra.
+
+Solicitação de Entrada: 
+- Implementem a solicitação de entrada de uma palavra (string).
+
+Contagem de Vogais:
+- Implemente um loop "for" ou "while" para percorrer cada caractere da palavra.
+Verifique se cada caractere é uma vogal (a, e, i, o, u) e conte-as.
+Imprima o número total de vogais na palavra.
+
+```python
+
+def contar_vogais(palavra):
+    vogais = "aeiouAEIOU"  
+    contador = 0
+
+    for caractere in palavra:
+        if caractere in vogais:
+            contador += 1
+
+    return contador
+
+palavra = input("Digite uma palavra: ")
+
+total_vogais = contar_vogais(palavra)
+
+print(f"Total de vogais na palavra '{palavra}': {total_vogais}")
+
+```
+
+
+O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: Atividades\Atividade27.py.
+
+
+</details>
 
 </details>
 
