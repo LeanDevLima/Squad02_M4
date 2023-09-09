@@ -1,15 +1,12 @@
-# Solicita ao usuário que insira sua idade como um número inteiro
+
 idade = int(input("Digite sua idade: "))
 
-# Verifica se a idade é maior ou igual a 18
+
 if idade >= 18:
-    # Se a idade for maior ou igual a 18, imprime a seguinte mensagem
     print("Indivíduo possui idade mínima para dirigir.")
 elif 17 <= idade and idade < 18:
-    # Se a idade estiver entre 17 e 18 anos, imprime a seguinte mensagem
     print("Indivíduo tem entre 17 e 18 anos e ainda NÃO está apto para dirigir.")
 else:
-    # Se a idade for menor que 17, imprime a seguinte mensagem
     print("Indivíduo não possui idade mínima para dirigir.")
 
 
