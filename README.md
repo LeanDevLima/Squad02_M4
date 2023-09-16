@@ -294,10 +294,10 @@ Quando se trata da experiência obtida com esta atividade, vimos um resultado se
 
 
 ```python
-# Primeiro bloco
+
 print("DESAFIO DO CAÍQUE")
 
-# Segundo bloco
+
 resultado = 145 + 234
 print("A soma de 145 e 234 é:", resultado)
 
@@ -1545,6 +1545,30 @@ O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: A
 - Ter um validador nessa lista que permita a inserção de dados até ocupar 5 espaços index.
 - Fazer um laço de repetição para passar todos os números da lista em uma função para verificar se o número é par ou ímpar. 
 
+```python
+
+numeros_de_matricula = []
+
+while len(numeros_de_matricula) < 5:
+    numero = input("Digite um número de matrícula ou 'q' para sair: ")
+    
+    if numero.lower() == 'q':
+        break
+    
+    if numero.isdigit():
+        numeros_de_matricula.append(int(numero))
+    else:
+        print("Por favor, insira um número válido.")
+
+for numero in numeros_de_matricula:
+    if numero % 2 == 0:
+        print(f"{numero} é um número de matrícula par.")
+    else:
+        print(f"{numero} é um número de matrícula ímpar.")
+
+```
+
+O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: Atividades\Atividade31.py.
 
 </details>
 
@@ -1557,6 +1581,96 @@ O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: A
 - Desenvolva o programa
 - Faça casos de teste para este cenário, documente os testes realizados e insira no Bitrix
 - Caso seja encontrado algum bug no seu código, documente-o. 
+
+---
+
+**Brainstorming:**
+
+1. **Requisitos Principais:**
+   - O programa deve receber o CEP do usuário.
+   - Deve verificar se o CEP pertence a um estado das regiões Norte ou Nordeste.
+   - Se o CEP estiver nas regiões elegíveis, o frete deve ser marcado como grátis.
+   - Caso contrário, o frete não deve ser grátis.
+
+2. **Interface de Usuário:**
+   - Criar uma interface simples para que o usuário possa inserir o CEP.
+   - Exibir uma mensagem clara sobre a elegibilidade do frete grátis após a verificação.
+
+3. **Lógica de Verificação:**
+   - Criar uma lista de estados que fazem parte das regiões Norte e Nordeste.
+   - Verificar se o estado associado ao CEP está na lista de estados elegíveis.
+
+4. **Testes:**
+   - Realizar testes com CEPs de diferentes estados e regiões para garantir que o programa esteja funcionando corretamente.
+   - Documentar os casos de teste e os resultados esperados.
+
+---
+
+**Desenvolvimento do programa:**
+
+```python
+
+import requests
+
+def verificar_frete_gratis(cep):
+    cep_formatado = ''.join(filter(str.isdigit, cep))
+
+    url = f"https://viacep.com.br/ws/{cep_formatado}/json/"
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        data = response.json()
+        estado = data.get("uf", "").upper()
+        
+        estados_elegiveis = ["AC", "AL", "AM", "AP", "BA", "CE", "MA", "PA", "PB", "PE", "PI", "RN", "RO", "RR", "TO"]
+
+        if estado in estados_elegiveis:
+            return True
+        else:
+            return False
+    else:
+        print("Erro ao consultar o CEP. Verifique se o CEP é válido.")
+        return False
+
+cep_usuario = input("Digite o CEP: ")
+
+if verificar_frete_gratis(cep_usuario):
+    print("Frete grátis disponível para o seu CEP!")
+else:
+    print("Não há frete grátis para o seu CEP.")
+
+```
+
+---
+
+**Casos de teste:**
+
+De acordo com a atividade, abaixo constam o que podem ser possíveis casos de testes para ess ecenário.
+
+**Caso de Teste 1:**
+- CEP: 69000-000 (Amazonas)
+- Resultado Esperado: Frete grátis disponível para o seu CEP!
+
+**Caso de Teste 2:**
+- CEP: 87000-000 (Paraná)
+- Resultado Esperado: Não há frete grátis para o seu CEP.
+
+**Caso de Teste 3:**
+- CEP: 60000-000 (Ceará)
+- Resultado Esperado: Frete grátis disponível para o seu CEP!
+
+**Caso de Teste 4:**
+- CEP: 15000-000 (São Paulo)
+- Resultado Esperado: Não há frete grátis para o seu CEP.
+
+**Caso de Teste 5:**
+- CEP: 58000-000 (Paraíba)
+- Resultado Esperado: Frete grátis disponível para o seu CEP!
+
+---
+
+O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: Atividades\Atividade32.py.
+
 
 
 </details>
