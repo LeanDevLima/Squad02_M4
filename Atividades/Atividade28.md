@@ -163,6 +163,7 @@ E por fim, para desativar o ambiente virtural, bastou digitar o comando deactiva
 ```bash
 deactivate
 ```
+O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: Atividades\Atividade28.py.
 
 ## Integrantes da Squad:
 
