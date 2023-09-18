@@ -167,7 +167,7 @@ Essa mensagem de erro significa que eu estava fazendo uma requisição POST para
 
 Um modo de resolver seria desativar o APPEND_SLASH, como eu não tinha o acesso para fazer essa alteração, bastou eu inserir uma barra "/"  no final da URL correspondete a __authors__,  __genders__ e __books__, o que pode ser observado nas linhas 28, 34 e 47 do código.
 
-Só imagine como ficou meu estado de espírito eu perceber que era só por uma "/" depois de mais de 24h de muitas e muitas tentativas de execução dessa atividade. As animações GIF a seguir proporcionam uma representação visual do processo:
+Só imagine como ficou meu estado de espírito ao perceber que era só por uma "/" depois de mais de 24h de muitas e muitas tentativas de execução dessa atividade. As animações GIF a seguir proporcionam uma representação visual do processo:
 
 #### Início do processo
 
