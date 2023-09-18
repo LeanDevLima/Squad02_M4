@@ -1912,7 +1912,7 @@ Nessa Api existem algumas condições para que um Livro seja criado. É necessá
 
 <img src="Atividades/atividadeFinal_1.png" width="850" height="400">
 
-Tomei o cuidade de criar um autor chamado 'Leanderson' e um gênero chamado 'Squad2' para facilitar a visualização do resultado dessa atividade.
+Tomei o cuidado de criar um autor chamado 'Leanderson' e um gênero chamado 'Squad2' para facilitar a visualização do resultado dessa atividade.
 
 Nesse código eu inseri o 'import sys' e o 'import os' e as informações das linhas 4, 5 e 6, para que esse código pudesse ser executado dentro da pasta 'Atividades' conforme o padrão adotado nesse repositório.
 
