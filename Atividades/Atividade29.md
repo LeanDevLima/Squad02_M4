@@ -7,7 +7,7 @@ Esse [repositório](https://github.com/LeanDevLima/Squad02_M4) é dedicado às a
 
 🔍 DESAFIO DO CAIQUE Vamos explorar o poder da biblioteca OS! Prepare-se para mergulhar no mundo da interação entre o Python e o seu sistema operacional. Vamos aprender a usar a biblioteca OS em conjunto com funções nativas do Python para criar algo. O desafio é o seguinte: você vai criar uma lista de dados e, usando a biblioteca OS, interagir com o seu sistema operacional. Além disso, também criará uma nova pasta para salvar o arquivo de texto txt.
 
-Para essa atividade, tomei como base o arquivo Atividades\atividade29_dados.csv que está nesse repositório. Aqui está o início do conteúdo desse arquivo.
+Para essa atividade, tomei como base o arquivo Atividades\atividade_dados.csv que está nesse repositório. Aqui está o início do conteúdo desse arquivo.
 
 ```csv
 ,nome,endereco,email,idade,renda
@@ -45,7 +45,7 @@ import os
 
 dados = []
 
-caminho_csv = 'Atividades/atividade29_dados.csv'
+caminho_csv = 'Atividades/atividade_dados.csv'
 
 if os.path.exists(caminho_csv):
     with open(caminho_csv, newline='') as csvfile:
@@ -74,7 +74,7 @@ with open(caminho_arquivo_txt, 'w') as arquivo_txt:
 
 Este código, primeiro, importa algumas ferramentas úteis para lidar com informações em um formato chamado CSV. 
 
-Em seguida, pega as informações do arquivo que está guardado em 'Atividades/atividade29_dados.csv' e guarda essas informações em uma lista chamada 'dados'. 
+Em seguida, pega as informações do arquivo que está guardado em 'Atividades/atividade_dados.csv' e guarda essas informações em uma lista chamada 'dados'. 
 
 Antes de fazer isso, o código verifica se esse arquivo existe para não ter problemas. 
 

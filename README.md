@@ -1688,6 +1688,33 @@ O arquivo dessa atividade está nesse repositório dentro da pasta Atividades: A
 🔍 PARTE 1 Crie um DataFrame com os seguintes dados: 
 Nome, idade e cidade. Sendo 3 pessoas moradoras de Recife, 2 de Salvador, 1 de são paulo e 1 de Manaus. Depois, filtre os dados para exibir na tela apenas os moradores do Recife. 
 
+```python
+
+import sys
+import os
+
+root_dir = os.path.dirname(os.path.abspath(__file__))  # 
+project_dir = os.path.join(root_dir, '..') 
+sys.path.append(project_dir)  
+
+import pandas as pd
+
+data = {
+    'Nome': ['Leanderson', 'Beatriz', 'Bruno', 'Rebeca', 'Sara', 'Mateus', 'Michele'],
+    'Idade': [25, 25, 28, 22, 35, 23, 27],
+    'Cidade': ['Recife', 'Recife', 'Recife', 'Salvador', 'Salvador', 'São Paulo', 'Manaus']
+}
+
+df = pd.DataFrame(data)
+
+moradores_recife = df[df['Cidade'] == 'Recife']
+
+print(moradores_recife)
+
+```
+Nesse código eu inseri o 'import sys' e o 'import os' e as informações das linhas 4, 5 e 6, para que esse código pudesse ser executado dentro da pasta 'Atividades' conforme o padrão adotado nesse repositório.
+
+O arquivo correspondente a essa atividade está no seguinte local: Atividades\Atividade33.py.
 
 </details>
 
@@ -1695,26 +1722,108 @@ Nome, idade e cidade. Sendo 3 pessoas moradoras de Recife, 2 de Salvador, 1 de s
 <summary>🚀 Descrição da 34ª Atividade: 🌟</summary>
 <br>
 
-🔍 PARTE 1 Crie um DataFrame com os seguintes dados: 
-Nome, idade e cidade. Sendo 3 pessoas moradoras de Recife, 2 de Salvador, 1 de são paulo e 1 de Manaus. Depois, filtre os dados para exibir na tela apenas os moradores do Recife. 
+🔍 PARTE 2 Agora, abriremos tabelas já existentes e manipularemos os dados. Baixe a tabela csv abaixo e crie um df.
+
+dados_ficticios.csv
+6 KB
+
+Filtre as pessoas levando em consideração os seguintes critérios:
+
+- com idade maior que 40 anos;
+- com renda maior de 5 mil;
+- com renda maior de 15 mil.
+
+---
+
+Alterei o nome do arquivo dados_ficticios.csv para atividade_dados.csv para facilitar a execução dessa atividade pois uso a mesma tabela de dados na Atividade 28, e inseri o arquivo na pasta 'Atividades' conforme o padrão adotado nesse repositório.
+
+
+```python
+
+import sys
+import os
+
+root_dir = os.path.dirname(os.path.abspath(__file__))  # 
+project_dir = os.path.join(root_dir, '..') 
+sys.path.append(project_dir)  
+
+import pandas as pd
+
+caminho_arquivo_csv = 'Atividades/atividade_dados.csv'
+df = pd.read_csv(caminho_arquivo_csv)
+
+filtro_idade_maior_40 = df['idade'] > 40
+pessoas_idade_maior_40 = df[filtro_idade_maior_40]
+
+filtro_renda_maior_5mil = df['renda'] > 5000
+pessoas_renda_maior_5mil = df[filtro_renda_maior_5mil]
+
+filtro_renda_maior_15mil = df['renda'] > 15000
+pessoas_renda_maior_15mil = df[filtro_renda_maior_15mil]
+
+print("Pessoas com idade maior que 40 anos:")
+print(pessoas_idade_maior_40)
+
+print("\nPessoas com renda maior que 5 mil:")
+print(pessoas_renda_maior_5mil)
+
+print("\nPessoas com renda maior que 15 mil:")
+print(pessoas_renda_maior_15mil)
+
+```
+---
+
+Ao rodar esse código temos o seguinte resultado no terminal:
+
+
+
+<img src="Atividades\atividade34_1.png">
+<img src="Atividades\atividade34_2.png">
+<img src="Atividades\atividade34_3.png">
+
+---
+
+O arquivo correspondente a essa atividade está no seguinte local: Atividades\Atividade34.py.
 
 
 </details>
-
 
 <details>
 <summary>🚀 Descrição da 35ª Atividade: 🌟</summary>
 <br>
 
-🔍 PARTE 2 Agora, abriremos tabelas já existentes e manipularemos os dados. 
-Baixe a tabela csv abaixo e crie um df
+🔍 Individualmente
 
-Filtre as pessoas levando em consideração os seguintes critérios:
+Crie uma persona com a biblioteca Faker com nome, idade e cidade. Criando o atributo random.int para gerar valores aleatórios para idade.
 
-com idade maior que 40 anos
-com renda maior de 5 mil
-com renda maior de 15 mil
+- Para essa atividade limitei a idade para pessoas entre 15 e 65 anos.
 
+```python
+
+import sys
+import os
+
+root_dir = os.path.dirname(os.path.abspath(__file__))  
+project_dir = os.path.join(root_dir, '..') 
+sys.path.append(project_dir)  
+
+import random
+from faker import Faker
+
+faker = Faker()
+
+nome = faker.name()
+idade = random.randint(15, 65)
+cidade = faker.city()
+
+print("Nome:", nome)
+print("Idade:", idade)
+print("Cidade:", cidade)
+
+
+```
+
+O arquivo correspondente a essa atividade está no seguinte local: Atividades\Atividade35.py.
 
 </details>
 
@@ -1722,26 +1831,107 @@ com renda maior de 15 mil
 <summary>🚀 Descrição da 36ª Atividade: 🌟</summary>
 <br>
 
-🔍 Individualmente
+🔍 EM SQUADs Crie um script com: 
+- Uma função para criar personas, contendo nome, cidade, idade; 
+- Salve os dados dessas personas em um arquivo CSV na pasta Atividades com o nome atividade36.csv;
+- Suba todos os arquivos para seu repositório.
 
-Crie uma persona com a biblioteca Faker com nome, idade e cidade. Criando o atributo random.int para gerar valores aleatórios para idade.
 
+```python
+
+import sys
+import os
+
+root_dir = os.path.dirname(os.path.abspath(__file__))  
+project_dir = os.path.join(root_dir, '..') 
+sys.path.append(project_dir)  
+
+import random
+import csv
+from faker import Faker
+
+def criar_persona():
+    faker = Faker()
+    nome = faker.name()
+    idade = random.randint(18, 65)
+
+    cidade = faker.city()
+
+    return {'Nome': nome, 'Idade': idade, 'Cidade': cidade}
+
+def salvar_personas_em_csv(numero_de_personas):
+    personas = [criar_persona() for _ in range(numero_de_personas)]
+
+    arquivo_csv = 'Atividades/atividade36.csv'
+
+    with open(arquivo_csv, 'w', newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=['Nome', 'Idade', 'Cidade'])
+        
+        writer.writeheader()
+        
+        for persona in personas:
+            writer.writerow(persona)
+
+    print(f"{numero_de_personas} personas foram salvas no arquivo CSV: {arquivo_csv}")
+
+numero_de_personas = 25 
+salvar_personas_em_csv(numero_de_personas)
+
+
+```
+
+Nessa atividade considerei criar um número de 25 pessoas e salvar os dados criados no arquivo Atividades\atividade36.csv.
+
+O arquivo correspondente a essa atividade está no seguinte local: Atividades\Atividade36.py.
+
+</details>
 
 </details>
 
 <details>
-<summary>🚀 Descrição da 37ª Atividade: 🌟</summary>
+<summary>Atividade Final 🌟</summary>
 <br>
 
-🔍 EM SQUADs
+<img src="Atividades/atividadeFinal.jpg" alt="Minha Imagem" width="400" height="400">
 
-Crie um script com:
 
-Uma função para criar personas, contendo nome, cidade, idade. 
-Salve os dados dessas personas em um arquivo CSV.
-Suba todos os arquivos para seu repositório.
+Sim, ela voltou! Aquela que é a mais temida: atividade de requisição em APIs!!
 
-</details>
+Baseando-se nos conhecimentos adquiridos previamente sobre API e nas últimas aulas de  Python, façam as seguintes requisições nos endpoints:
+http://apilivro.jogajuntoinstituto.org/swagger/
+
+
+Cadastre 4 livros, com as seguintes informações em um json: 
+Título, Autor, Gênero e Edição.
+
+Faça requisições GET em todos os livros e veja se os cadastrados por você estão disponíveis.
+
+
+```python
+
+
+
+
+```
+
+Nessa Api existem algumas confições para que um Livro seja criado. É necessário ter o ID de 'author' e 'gender', essa informação pode ser verificado no Swagger dessa API conforme o print abaixo. Significa que temos que criá-los primeiro.
+
+<img src="Atividades/atividadeFinal_1.png" width="850" height="400">
+
+Tomei o cuidade de criar um autor chamado 'Leanderson' e um gênero chamado 'Squad2' para facilitar a visualização do resultado dessa atividade.
+
+Nesse código eu inseri o 'import sys' e o 'import os' e as informações das linhas 4, 5 e 6, para que esse código pudesse ser executado dentro da pasta 'Atividades' conforme o padrão adotado nesse repositório.
+
+Usei a biblioteca Faker para criar dados fictícios para os nomes dos livros e a biblioteca Pandas para criar um DataFrame com os livros cadastrados.
+
+Esse foi o resultado no terminal:
+
+
+
+
+
+
+O arquivo correspondente a essa atividade está no seguinte local: Atividades\AtividadeFinal.py.
 
 
 
